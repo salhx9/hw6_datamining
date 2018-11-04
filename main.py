@@ -1,3 +1,5 @@
+#Shelby Luttrel
+#homework 6: recsys
 from surprise import Dataset
 from surprise import Reader
 from surprise import evaluate, print_perf
@@ -12,7 +14,6 @@ reader = Reader(line_format='user item rating timestamp', sep='\t')
 data = Dataset.load_from_file(file_path, reader=reader)
 
 # 5
-
 print('\n#{} SVD -------------------------------\n'.format(5))
 data.split(n_folds=3)
 
